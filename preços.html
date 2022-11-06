@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apolo Energy</title>
+    <!--bootstrap 5 css link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--  Font Awesome Solid + Brands -->
+    <link href="/fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="/fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
+    <link href="/fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
+    <!--external css file-->
+    <link href="preços.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!--TRANSPERENT img -->
+    <header>
+
+    </header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-transparent">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Apolo<span style="color: #da251c;">E</span>nergy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">SOBRE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preços.html">PREÇOS</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+    <!--bootstrap 5 js link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <section class="banner1">
+          
+        
+        </section>
+
+    <section class="banner2">
+        <!--CARD 1-->
+        <div class="wrapper">
+            <figure class="card">
+                <img src="img/painel2.jpg" alt="card image" />
+
+                <figcaption class="card__cap">
+                    <h2>Monocristalino</h2>
+                    <div class="card__desc">
+                        
+                    </div>
+                </figcaption>
+                <button class="det__btn">Detalhes</button>
+            </figure>
+
+            <div class="card__details ">
+                <p class="card__type">Monocristalino</p>
+            
+                <div class="card__feactures">
+                    <div class="feacture">Vida útil é superior a 25 anos</div>
+                    <div class="feacture">Funcionam melhor que os demais painéis, em condição de pouca luz</div>
+                    <div class="feacture">Ocupam menos espaço e geram a mesma quantidade de energia</div>
+                    <div class="feacture">E possuem uma alta eficiência de cerca de 15% e 22%.</div>
+                </div>
+                <button class="buy__btn">Reservar agora</button>
+            </div>
+        </div>
+        <script>
+
+
+            document.querySelectorAll('button').forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    if (btn.className === 'det__btn') {
+                        document.querySelector('.card__details').classList.add('open');
+                    }
+
+                    if (btn.className === 'buy__btn') {
+                        document.querySelector('.card__details').classList.remove('open');
+                    }
+                });
+            });
+        </script>
+
+        <!--CARD 2-->
+        <div class="wrapper2">
+            <figure class="card2">
+                <img src="img/painel2.jpg" alt="card image" />
+
+                <figcaption class="card__cap">
+                    <h2>Policristalino</h2>
+                    <div class="card__desc">
+                    </div>
+                </figcaption>
+                <button class="det__btn2">Detalhes</button>
+            </figure>
+
+            <div class="card__details2 ">
+                <p class="card__type2">Policristalino</p>
+                <div class="card__feactures2">
+                    <div class="feacture2">A quantidade de silício residual gerado é menor em comparação com monocristalino;</div>
+                    <div class="feacture2">Painéis policristalinos tendem a ser um pouco mais baratos que os painéis monocristalinos.</div>
+                    <div class="feacture2">A vida útil dos painéis policristalinos é maior que 30 anos</div>
+                    
+                </div>
+                <button class="buy__btn2">Reservar agora</button>
+            </div>
+        </div>
+        <script>
+
+
+            document.querySelectorAll('button').forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    if (btn.className === 'det__btn2') {
+                        document.querySelector('.card__details2').classList.add('open');
+                    }
+
+                    if (btn.className === 'buy__btn2') {
+                        document.querySelector('.card__details2').classList.remove('open');
+                    }
+                });
+            });
+        </script>
+
+        <!--CARD 3-->
+        <div class="wrapper3">
+            <figure class="card3">
+                <img src="img/painel2.jpg" alt="card image" />
+
+                <figcaption class="card__cap">
+                    <h2>Orgânica</h2>
+                    <div class="card__desc">
+                       
+                    </div>
+                </figcaption>
+                <button class="det__btn3">Detalhes</button>
+            </figure>
+
+            <div class="card__details3 ">
+                <p class="card__type3">Orgânicas</p>
+                <div class="card__feactures3">
+                    <div class="feacture3">Possuir um grande potencial de baixo custo</div>
+                    <div class="feacture3">Sua capacidade de absorver raios ultravioleta diminui a carga de calor do ambiente. </div>
+
+                    <div class="feacture3">ele e produzido a partir de materiais orgânicos, sendo uma opção mais sustentável</div>
+                </div>
+                <button class="buy__btn3">Reservar agora</button>
+            </div>
+        </div>
+        <script>
+
+
+            document.querySelectorAll('button').forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    if (btn.className === 'det__btn3') {
+                        document.querySelector('.card__details3').classList.add('open');
+                    }
+
+                    if (btn.className === 'buy__btn3') {
+                        document.querySelector('.card__details3').classList.remove('open');
+                    }
+                });
+            });
+        </script>
+
+    </section>
+
+
+
+
+
+
+
+    <div>
+        <div class="rodape">
+            <img src="img/imglogo2.png">
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
